@@ -203,7 +203,6 @@ class MainWindow(QWidget):
         else:
             self.count = 0
         self.prev_text = img_text
-        # Khoảng cách mỗi chữ là 70, chưa biết rõ cho lắm về những thông số Khác
         for (index, char) in enumerate(self.to_print):
             cv2.putText(blank_image, char, (70 * index, 40), cv2.FONT_HERSHEY_TRIPLEX, 0.5, (0, 255, 255))
 

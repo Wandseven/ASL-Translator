@@ -167,7 +167,6 @@ while True:
         count = 0
 
     prev_text = img_text
-    #Khoảng cách mỗi chữ là 70, chưa biết rõ cho lắm về những thông số Khác 
     for (index, char) in enumerate(to_print):
         cv2.putText(blank_image, char, (70*index, axis_y), cv2.FONT_HERSHEY_TRIPLEX, 0.5, (0, 255, 255))
     #Số chữ cái và từ là 15 trong một hàng, nếu nó đầy thì sẽ tự động reset 
